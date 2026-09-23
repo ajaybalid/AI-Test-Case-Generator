@@ -124,3 +124,17 @@ Open the application in your browser:
 ```text
 http://localhost:3000
 ```
+
+## Application Preview
+
+### Main Application
+
+![Main Application](screenshots/01-main-application.png)
+
+### Generated Test Case Summary
+
+![Test Case Summary](screenshots/02-test-case-summary.png)
+
+### Detailed Test Case
+
+![Detailed Test Case](screenshots/03-detailed-test-case.png)
