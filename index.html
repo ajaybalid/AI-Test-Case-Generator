@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="AI Test Case Generator - Transform software requirements into structured test cases using AI."
+    >
+
+    <title>AI Test Case Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <header class="hero">
+
+        <div class="hero-badge">
+            <span class="status-dot"></span>
+            AI-Powered QA Assistant
+        </div>
+
+        <h1>
+            AI Test Case
+            <span>Generator</span>
+        </h1>
+
+        <p class="hero-description">
+            Transform software requirements into structured,
+            actionable test cases using artificial intelligence.
+        </p>
+
+    </header>
+
+
+    <!-- =========================
+         GENERATOR SECTION
+    ========================== -->
+
+    <main>
+
+        <section class="generator-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">TEST CASE GENERATION</p>
+
+                    <h2>
+                        Describe your requirement
+                    </h2>
+
+                    <p>
+                        Enter a software requirement and let AI generate
+                        structured test scenarios for you.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="generator-card">
+
+                <label for="requirement">
+                    Software Requirement
+                </label>
+
+                <textarea
+                    id="requirement"
+                    rows="8"
+                    placeholder="Example: Create test cases for a login page where users enter an email and password and click the Login button."
+                ></textarea>
+
+                <div class="test-type-section">
+
+    <label for="testType">
+        Test Type
+    </label>
+
+    <select id="testType">
+
+        <option value="All Types">
+            All Types
+        </option>
+
+        <option value="Functional">
+            Functional Testing
+        </option>
+
+        <option value="Negative">
+            Negative Testing
+        </option>
+
+        <option value="Edge Case">
+            Edge Case Testing
+        </option>
+
+        <option value="Regression">
+            Regression Testing
+        </option>
+
+    </select>
+
+</div>
+
+<div class="test-type-section">
+
+    <label for="testCaseCount">
+        Number of Test Cases
+    </label>
+
+    <select id="testCaseCount">
+
+        <option value="AI decides">
+            AI decides
+        </option>
+
+        <option value="5">
+            5 Test Cases
+        </option>
+
+        <option value="10">
+            10 Test Cases
+        </option>
+
+        <option value="15">
+            15 Test Cases
+        </option>
+
+        <option value="20">
+            20 Test Cases
+        </option>
+
+        <option value="25">
+            25 Test Cases
+        </option>
+
+    </select>
+
+</div>
+
+                <div class="input-footer">
+
+                    <span>
+                        💡 Be as specific as possible for better test coverage.
+                    </span>
+
+                    <span id="characterCount">
+                        0 characters
+                    </span>
+
+                </div>
+
+
+                <button id="generateBtn">
+
+                    <span class="button-icon">✦</span>
+
+                    Generate Test Cases
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HOW IT WORKS
+        ========================== -->
+
+        <section class="workflow-section">
+
+            <div class="section-heading centered">
+
+                <p class="section-label">
+                    HOW IT WORKS
+                </p>
+
+                <h2>
+                    From requirement to test cases
+                </h2>
+
+            </div>
+
+
+            <div class="workflow">
+
+                <div class="workflow-card">
+
+                    <div class="workflow-number">
+                        01
+                    </div>
+
+                    <div class="workflow-icon">
+                        📝
+                    </div>
+
+                    <h3>
+                        Enter Requirement
+                    </h3>
+
+                    <p>
+                        Describe the feature or functionality
+                        you want to test.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-line"></div>
+
+
+                <div class="workflow-card">
+
+                    <div class="workflow-number">
+                        02
+                    </div>
+
+                    <div class="workflow-icon">
+                        ✨
+                    </div>
+
+                    <h3>
+                        AI Analysis
+                    </h3>
+
+                    <p>
+                        AI analyzes the requirement and identifies
+                        relevant testing scenarios.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-line"></div>
+
+
+                <div class="workflow-card">
+
+                    <div class="workflow-number">
+                        03
+                    </div>
+
+                    <div class="workflow-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        Get Test Cases
+                    </h3>
+
+                    <p>
+                        Receive structured test cases with steps,
+                        expected results, and priority.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GENERATED RESULTS
+        ========================== -->
+
+        <section class="results-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    AI OUTPUT
+                </p>
+
+                <h2>
+                    Generated Test Cases
+                </h2>
+
+                <p>
+                    Your AI-generated test cases will appear here.
+                </p>
+
+            </div>
+
+
+            <div id="output" class="results-card">
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Ready to generate
+                    </h3>
+
+                    <p>
+                        Enter a software requirement above
+                        to create your first set of AI-generated
+                        test cases.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <strong>
+                    AI Test Case Generator
+                </strong>
+
+                <p>
+                    AI-powered software testing assistant.
+                </p>
+            </div>
+
+
+            <div class="footer-tech">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Gemini AI</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                Built as an AI & QA portfolio project.
+            </span>
+
+            <span>
+                © 2026
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
