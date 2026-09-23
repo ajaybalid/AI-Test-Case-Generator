@@ -83,4 +83,43 @@ AI-Test-Case-Generator/
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
+├── .env.example
 └── README.md
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ajaybalid/AI-Test-Case-Generator.git
+```
+
+Navigate into the project:
+
+```bash
+cd AI-Test-Case-Generator
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file in the project root using `.env.example` as a template:
+
+```text
+GEMINI_API_KEY=your_api_key_here
+```
+
+Start the application:
+
+```bash
+npm start
+```
+
+Open the application in your browser:
+
+```text
+http://localhost:3000
+```

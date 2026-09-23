@@ -1,18 +1,23 @@
 {
   "name": "ai-test-case-generator",
   "version": "1.0.0",
-  "main": "script.js",
+  "description": "AI-powered test case generator using Google Gemini API",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
+  "keywords": [
+    "ai",
+    "qa",
+    "testing",
+    "test-case-generator",
+    "gemini"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@google/genai": "^2.23.0",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "openai": "^7.9.0"
+    "express": "^5.2.1"
   }
 }
