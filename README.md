@@ -85,6 +85,7 @@ AI-Test-Case-Generator/
 ├── .gitignore
 ├── .env.example
 └── README.md
+```
 
 ## Installation
 
